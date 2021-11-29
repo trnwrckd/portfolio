@@ -1,5 +1,6 @@
 .projects{
-    background-color: rgb(255, 196, 208);
+    background-color: rgb(233, 233, 233);
+    /* min-height: 100vh;     */
 }
 .projects>h1{
     color: white;
@@ -9,4 +10,13 @@
     padding: 5px 50px;
     background-color: black;
     margin-top: -50px;
+}
+.projects-container{
+    padding: 100px 0;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }

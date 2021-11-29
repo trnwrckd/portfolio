@@ -1,8 +1,8 @@
 import React from 'react';
+import ContactBtn from '../../../Shared/ContactBtn/ContactBtn';
 import Footer from '../../../Shared/Footer/Footer';
 import Header from '../../../Shared/Header/Header';
 import Banner from '../Banner/Banner';
-import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects/Projects';
 import './Home.css';
 
@@ -11,8 +11,8 @@ const Home = () => {
         <div>
             <Header/>
             <Banner/>
-            <Projects/>
-            <Contact></Contact>
+            <Projects />
+            <ContactBtn></ContactBtn>
             <Footer/>
         </div>
     );

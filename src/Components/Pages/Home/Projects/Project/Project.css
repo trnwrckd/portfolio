@@ -1,7 +1,5 @@
 .project-img-container{
     position: relative;
-    height: 250px;
-    width: 350px;
     border-radius: 15px;
     z-index: 1;
     overflow:hidden ;
@@ -23,6 +21,9 @@
     opacity: 1;
     cursor: pointer;
 }
+.project-img-container:hover .icons{
+    opacity: 1;
+}
 
 .project-img{
     height: 100%;
@@ -34,11 +35,22 @@
     top: 0;
     left: 0;
     width: 100%;
+    opacity: 0;
     height: 100%;
     z-index: 3;
     display: flex;
-    justify-content: space-around;
+    color: white;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 40px;
-    z-index: 777;
+    z-index: 5;
+    transition: .5s all;
+}
+
+.icons>a{
+    color: white;
+    transition: .5s all;
+}
+.icons>a:hover{
+    color: rgb(255, 241, 111);
 }

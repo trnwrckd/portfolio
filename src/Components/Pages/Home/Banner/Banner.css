@@ -30,9 +30,10 @@
 .btn-resume>a{
     text-decoration: none;
     color: inherit;
+    transition: .5s all;
 }
 .btn-resume:hover{
     background-color: rgb(255, 181, 71);
-    border-color: crimson;
+    border-color: rgb(15, 1, 63);
     color: black;
 }

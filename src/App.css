@@ -4,6 +4,7 @@
 
 .App {
   text-align: center;
+  overflow: hidden;
 }
 .full-vh{
   height: 110vh;

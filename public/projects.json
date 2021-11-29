@@ -3,18 +3,21 @@
         "id": 1, 
         "title" : "Surreal Studio",
         "shortDesc" : "An Art Selling website.",
-        "img": "./images/surrealstudio.png"
+        "img": "./images/surrealstudio.png",
+        "url": "https://surreal-studio.firebaseapp.com/"
     },
     {
         "id": 2, 
         "title" : "Nomad Travels",
         "shortDesc" : "A Travel Booking website.",
-        "img": "./images/nomadtravels.png"
+        "img": "./images/nomadtravels.png",
+        "url": "https://nomad-travels-504b4.firebaseapp.com/"
     },
     {
         "id": 3, 
         "title" : "Covid Support",
         "shortDesc" : "An website for support during the pandemic.",
-        "img": "./images/covidsupport.png"
+        "img": "./images/covidsupport.png",
+        "url": "https://react-firebase-authentic-c6866.web.app/"
     }
 ]
