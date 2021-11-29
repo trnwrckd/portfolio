@@ -6,6 +6,15 @@
   text-align: center;
   overflow: hidden;
 }
+
 .full-vh{
   height: 110vh;
+}
+
+.section-heading{
+    color: white;
+    width: 100%;
+    font-size: 3.5em;
+    text-align: start;
+    padding: 5px 25px;
 }

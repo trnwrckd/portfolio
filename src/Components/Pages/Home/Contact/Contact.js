@@ -32,7 +32,7 @@ const Contact = () => {
                 {errors.email && <p className="text-center text-danger fs-5 my-0 ">{errors.email.message}</p>}
                 <input type="text" name="subject" placeholder="Subject" {...register("subject", { required: "Subject is required" })}/>
                 {errors.subject && <p className="text-center text-danger fs-5 my-0 ">{errors.subject.message}</p>}
-                <input type="text" name="content" placeholder="Your Message" {...register("content", { required: "No message to send" })}/>
+            <input type="text" name="content" placeholder="Your Message" {...register("content", { required: "No message to send" })}/>
                 {errors.content && <p className="text-center text-danger fs-5 my-0 ">{errors.content.message}</p>}
                 <input type="submit" className="btn-mail"/>
             </form>
