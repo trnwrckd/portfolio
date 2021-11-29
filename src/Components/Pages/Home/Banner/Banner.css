@@ -1,5 +1,5 @@
 .banner{
-    background-color: rgb(43, 43, 105);
+    background-color: #20204F;
     color: white;
     font-weight: 700;
 }
@@ -30,10 +30,10 @@
 .btn-resume>a{
     text-decoration: none;
     color: inherit;
-    transition: .5s all;
+    transition: 1s all;
 }
 .btn-resume:hover{
-    background-color: rgb(255, 181, 71);
-    border-color: rgb(15, 1, 63);
+    background-color: rgb(226, 144, 51);
+    border-color: rgb(0, 0, 0);
     color: black;
 }

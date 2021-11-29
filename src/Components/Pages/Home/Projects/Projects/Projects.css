@@ -1,5 +1,5 @@
 .projects{
-    background-color: rgb(233, 233, 233);
+    background-color: #313164;
     /* min-height: 100vh;     */
 }
 .projects>h1{
@@ -8,7 +8,6 @@
     font-size: 3em;
     text-align: start;
     padding: 5px 50px;
-    background-color: black;
     margin-top: -50px;
 }
 .projects-container{
@@ -18,5 +17,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
     
 }

@@ -13,6 +13,9 @@ const Project = (props) => {
                 <div className="icons">
                     <a href={url} target="blank"> <FontAwesomeIcon icon={faLink}/></a>
                 </div>
+                <div className="details">
+                    <button className="btn-details">Details</button>
+                </div>
                 <img className="project-img" src={img} alt="" />
             </div>
             <div className="text-start mx-2 mt-2">

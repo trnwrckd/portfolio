@@ -1,21 +1,23 @@
 import emailJS from 'emailjs-com';
-import React from 'react';
+import React, { useRef } from 'react';
 import './Contact.css';
+import apiKey from './apiKey';
 
 import { useForm } from "react-hook-form";
 
 const Contact = () => {
 
-    const { register, handleSubmit, watch, formState: { errors  , reset} } = useForm();
-    // const onSubmit = data => {
-    //     console.log(data);
-    // }
-    
-    const sendEmail = e => {
-        e.preventDefault();
+    const { register, handleSubmit, formState: { errors ,reset } } = useForm();
+    const form = useRef();
 
-        emailJS.sendForm('service_1g9q71j', 'template_ynd0nbo', e.target, 'user_wOget9jbIkVTkHWivXVUv')
-            .then(res => console.log(res.text))
+    console.log(apiKey.serviceID)
+
+    const onSubmit = (data) => {
+        emailJS.sendForm('service_1g9q71j', 'template_ynd0nbo', form.current, 'user_wOget9jbIkVTkHWivXVUv')
+            .then(res => {
+                console.log(res.text);
+                reset();
+            })
             .catch(error => console.log(error.text));
     };
     
@@ -23,7 +25,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <h1> Contact</h1>
-            <form onSubmit={handleSubmit(sendEmail)} className="py-5">
+            <form ref={form} onSubmit={handleSubmit(onSubmit)} className="py-5">
                 <input type="text" name="name" placeholder="Name" {...register("name", { required: "Name is required" })} />
                 {errors.name && <p className="text-center text-danger fs-5 my-0 ">{errors.name.message}</p>}
                 <input type="email" name="email" placeholder="Email" {...register("email", { required: "Email is required" })}/>

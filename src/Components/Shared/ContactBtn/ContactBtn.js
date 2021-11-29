@@ -23,7 +23,15 @@ const ContactBtn = () => {
 
     return (
         <>
-            <button style={btn} className="btn-contact" onClick={()=>setShowModal(true)}> Contact</button>
+            <button style={btn} className="btn-contact" onClick={() => setShowModal(true)}>
+                <p>C</p>
+                <p>O</p>
+                <p>N</p>
+                <p>T</p>
+                <p>A</p>
+                <p>C</p>
+                <p>T</p>
+            </button>
             <BaseModal
                 isOpen={showModal}
                 onDismiss={() => setShowModal(false)}
@@ -34,7 +42,7 @@ const ContactBtn = () => {
                 }}
                 contentProps={{ style: staticModalStyles }}
             >
-            
+        
                 <Contact></Contact>
                 <ModalCloseTarget>
                     <div className="w-100 d-flex justify-content-end">

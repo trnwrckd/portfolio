@@ -17,7 +17,7 @@ const Projects = () => {
         <div className="projects">
             <h1>Projects</h1>
             <div data-aos="fade-left" className=" container projects-container">
-                <div className= "row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div className= "row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
                     {
                         projects.map(project => <Project key={project.id} project={project}/>)
                     }

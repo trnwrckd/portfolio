@@ -1,7 +1,7 @@
 .contact{
     /* height: 50vh; */
     width: 100%;
-    background-color:rgb(255, 186, 36);
+    background-color:rgba(31, 31, 31, 0.95);
     display: flex;
     flex-direction: column;
 }
@@ -18,12 +18,21 @@ input{
     display: block;
     padding: 8px 20px;
     width: 50%;
+    border-radius: 5px;
     margin: 5px auto;
 }
 .btn-mail{
-    background-color: transparent;
+    background-color: #20204F;
     border: 3px solid  black;
     padding: 10px 20px;
     color: white;
+    border-radius: 5px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
     margin: 5px auto;
+    transition: .5s all;
+}
+
+.btn-mail:hover{
+    letter-spacing: 3px;
 }
