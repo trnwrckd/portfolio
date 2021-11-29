@@ -1,0 +1,44 @@
+.project-img-container{
+    position: relative;
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    z-index: 1;
+    overflow:hidden ;
+}
+
+.project-img-container:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    background-color: rgba(10, 0, 49, 0.8);
+    transition: .5s all;
+}
+.project-img-container:hover:after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.project-img{
+    height: 100%;
+    width: 100%;
+}
+
+.icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 40px;
+    z-index: 777;
+}

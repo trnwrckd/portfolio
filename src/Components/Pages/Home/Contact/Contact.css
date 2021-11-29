@@ -1,0 +1,29 @@
+.contact{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 186, 36);
+}
+.contact>h1{
+    color: white;
+    width: 100%;
+    font-size: 3em;
+    text-align: start;
+    padding: 5px 50px;
+    background-color: black;
+    margin-top: -50px;
+}
+input{
+    display: block;
+    padding: 8px 20px;
+    margin: 5px auto;
+}
+.btn-mail{
+    background-color: transparent;
+    border: 3px solid  black;
+    padding: 10px 20px;
+    color: white;
+    margin: 5px auto;
+}

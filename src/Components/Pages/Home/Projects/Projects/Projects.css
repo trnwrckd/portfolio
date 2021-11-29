@@ -1,0 +1,12 @@
+.projects{
+    background-color: rgb(255, 196, 208);
+}
+.projects>h1{
+    color: white;
+    width: 100%;
+    font-size: 3em;
+    text-align: start;
+    padding: 5px 50px;
+    background-color: black;
+    margin-top: -50px;
+}

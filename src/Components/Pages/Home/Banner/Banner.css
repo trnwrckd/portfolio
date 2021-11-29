@@ -1,0 +1,38 @@
+.banner{
+    background-color: rgb(43, 43, 105);
+    color: white;
+    font-weight: 700;
+}
+.banner>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.role{
+    font-size: 2rem;
+}
+.btn-resume{
+    border: none;
+    padding: 10px 20px;
+    border: 3px solid white;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+.btn-resume>a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn-resume:hover{
+    background-color: rgb(255, 181, 71);
+    border-color: crimson;
+    color: black;
+}
