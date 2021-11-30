@@ -2,6 +2,7 @@
     /* height: 50vh; */
     width: 100%;
     background-color:rgba(0, 0, 0, 0.95);
+    background-color:rgba(0, 0, 0, 1);
     display: flex;
     flex-direction: column;
     z-index: 888;
@@ -15,7 +16,7 @@
     background-color: black;
     margin-top: -30px;
 }
-input{
+input , .btn-mail{
     display: block;
     padding: 8px 20px;
     width: 50%;
@@ -26,14 +27,42 @@ input{
     background-color: #20204F;
     border: 3px solid  black;
     padding: 10px 20px;
+    position: relative;
     color: white;
     border-radius: 5px;
     font-weight: 800;
     letter-spacing: 1.5px;
     margin: 5px auto;
     transition: .5s all;
+    z-index: 1;
+    overflow: hidden ;
 }
 
 .btn-mail:hover{
     letter-spacing: 3px;
+    color: black;
+}
+
+.btn-mail:after , .btn-mail:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff922d;
+    z-index: -2;
+    transition: .8s all;
+}
+.btn-mail:before{
+    left: -100%;
+}
+.btn-mail:after{
+    right: -100%;
+}
+
+.btn-mail:hover:before{
+    left: 0;
+}
+.btn-mail:hover:after{
+    right: 0;
 }

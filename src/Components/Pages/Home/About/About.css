@@ -18,3 +18,21 @@
     transform: translateY(-2px);
     color: #B8C23C;
 }
+
+.text-orange{
+    color: #ff922d;
+}
+
+.text-green{
+    color: #73ff73;
+}
+
+.dazzle{
+    color: rgb(255, 241, 111);
+    margin-left: 5px;
+    transition: .5s all;
+}
+
+.dazzle:hover{
+    color: black;
+}

@@ -3,7 +3,13 @@
         "id": 1, 
         "title" : "Surreal Studio",
         "shortDesc" : "An Art Selling website.",
-        "img": "./images/surrealstudio.png",
+        "images": [
+          "./images/surreal-studio-1.png",
+          "./images/surreal-studio-2.png",
+          "./images/surreal-studio-3.png",
+          "./images/surreal-studio-4.png",
+          "./images/surreal-studio-5.png"
+        ],
         "links": {
             "url" : "https://surreal-studio.firebaseapp.com/",
             "front": "https://github.com/trnwrckd/surreal-studio-client-side",
@@ -28,7 +34,13 @@
         "id": 2, 
         "title" : "Nomad Travels",
         "shortDesc" : "A Travel Booking website.",
-        "img": "./images/nomadtravels.png",
+        "images": [
+          "./images/nomad-travels-1.png",
+          "./images/nomad-travels-2.png",
+          "./images/nomad-travels-3.png",
+          "./images/nomad-travels-4.png",
+          "./images/nomad-travels-5.png"
+        ],
         "links": {
             "url": "https://nomad-travels-504b4.firebaseapp.com/",
             "front": "https://github.com/trnwrckd/nomad-travels-client-side",
@@ -51,7 +63,12 @@
         "id": 3, 
         "title" : "Covid Support",
         "shortDesc" : "An website for support during the pandemic.",
-        "img": "./images/covidsupport.png",
+        "images": [
+          "./images/covid-support-1.png",
+          "./images/covid-support-2.png",
+          "./images/covid-support-3.png",
+          "./images/covid-support-4.png"
+        ],
         "links": {
             "url": "https://react-firebase-authentic-c6866.web.app/",
             "front": "https://github.com/trnwrckd/ph-healthcare-related-website"

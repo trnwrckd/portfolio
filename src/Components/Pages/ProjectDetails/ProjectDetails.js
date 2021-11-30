@@ -4,7 +4,7 @@ import { useParams , useNavigate} from 'react-router-dom';
 import { useProjects } from '../../../Hooks/useProjects';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleLeft  , faDotCircle} from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft  , faDotCircle , faCameraRetro} from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NotFound from '../NotFound/NotFound';
@@ -16,9 +16,13 @@ const ProjectDetails = () => {
     const [projects , loaded] = useProjects();
 
     const thisProject = projects[id - 1];
-    const { title, img , links, techs , features}  = thisProject ? thisProject : {};
+    const { title, images , links, techs , features}  = thisProject ? thisProject : {};
 
-    useEffect(()=>{AOS.init()},[])
+    useEffect(() => { AOS.init() }, []);
+
+    const startSlideShow = (project) => {
+        navigate('/slideshow' , {state: project})
+    }
 
     if( loaded && typeof(thisProject) === 'undefined') return <NotFound/>
 
@@ -26,8 +30,10 @@ const ProjectDetails = () => {
         <div data-aos="fade-in" className="px-5 pt-3 project-details">
             <div className="d-flex flex-column">
                 <div className="d-flex align-items-center project-title">
-                    <p onClick={()=>{navigate('/')}} className="cursor-pointer"><FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon></p>
-                    <p className="ps-4"> {title} </p>
+                    <p onClick={() => { navigate('/') }} className="cursor-pointer">
+                        <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
+                    </p>
+                    <p className="ps-4 text-start"> {title} </p>
                 </div>
                 <div className="links">
                     {links.url && <a href={links.url}> Live Site</a>}
@@ -36,12 +42,15 @@ const ProjectDetails = () => {
                 </div>
             </div>
             
-
-
             <div className="px-md-2 px-lg-4 row row-cols-1 row-cols-lg-2 g-3 details-container">
                 <div className="col py-3">
                     <div className="d-flex flex-column">
-                        <div><img src={img} className="img-fluid project-details-img" width="100%" alt="" /></div>
+                        <div className="details-img-container">
+                            <div className="slideshow" onClick={()=>{startSlideShow(thisProject)}}>
+                                <FontAwesomeIcon icon={faCameraRetro} />
+                            </div>
+                            <img src={images[0]} className="img-fluid project-details-img" width="100%" alt="" />
+                        </div>
                         <div className="py-3">
                             <h3 className="text-start mb-4">Tech Used</h3>
                             <div className="row row-cols-3 row-cols-md-4 g-3">

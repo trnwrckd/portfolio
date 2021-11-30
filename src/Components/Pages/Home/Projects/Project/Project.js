@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router';
 
 const Project = (props) => {
     
-    const { id, title, shortDesc, img , links} = props.project;
+    const { id, title, shortDesc, images , links} = props.project;
     const navigate = useNavigate();
+    
     const redirectToDetails = (id) => {
         const redirectURL = `/${id}`;
         navigate(redirectURL);
@@ -23,7 +24,7 @@ const Project = (props) => {
                 <div className="details">
                     <button className="btn-details" onClick={()=>{redirectToDetails(id)}}>Details</button>
                 </div>
-                <img className="project-img" src={img} alt="" />
+                <img className="project-img" src={images[0]} alt="" />
             </div>
             <div className="text-start mx-2 mt-2">
                 <h3>{title}</h3>

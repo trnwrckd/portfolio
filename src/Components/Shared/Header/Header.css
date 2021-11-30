@@ -14,7 +14,7 @@
 
 #hamburger{
     font-weight: 600;
-    /* z-index: 5; */
+    font-size: 3rem;
 }
 #hamburger:hover{
     color: rgb(255, 174, 0);

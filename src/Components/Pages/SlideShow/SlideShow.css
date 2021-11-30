@@ -1,0 +1,36 @@
+.slide{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide-text{
+    color: white;
+    transition: .5s all;
+}
+a{
+    text-decoration: none;
+}
+
+.slide-text:hover:last-child{
+    color: #ff922d;
+}
+
+.arrow{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .5s all;
+}
+
+.arrow:hover{
+    background-color: rgb(0, 0, 37);
+    color: #ff922d;
+    cursor: pointer;
+}

@@ -6,6 +6,7 @@ import ProjectDetails from './Components/Pages/ProjectDetails/ProjectDetails';
 import Blogs from './Components/Pages/Blogs/Blogs';
 import { useEffect } from 'react';
 import Aos from 'aos';
+import SlideShow from './Components/Pages/SlideShow/SlideShow';
 
 function App() {
 
@@ -14,12 +15,13 @@ function App() {
   },[])
 
   return (
-    <div className="App" data-aos="fade-in" data-aos-duration = "500">
+    <div className="App" data-aos="fade-in">
       <BrowserRouter>
         <Routes>
           <Route path = '/' element={<Home/>}/>
           <Route path = 'home' element={<Home/>}/>
           <Route path = 'blogs' element={<Blogs/>}/>
+          <Route path = 'slideshow' element={<SlideShow/>}/>
           <Route path='*' element={<NotFound />} />
           <Route path = ':id' element={<ProjectDetails/>}></Route>
         </Routes>
