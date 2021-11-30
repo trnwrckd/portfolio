@@ -1,11 +1,18 @@
 .project-details{
     background-color: #B59B26;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll ;
 }
 
 .cursor-pointer:hover{
     cursor: pointer;
     color: white;
+}
+
+.project-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+
 }
 
 .details-container{
@@ -17,19 +24,33 @@
 }
 
 .links{
-    width: 300px;
+    /* width: 300px; */
     display: flex;
     justify-content: center;
 }
 .links>a{
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2em;
+    margin: 0 5px;
+    padding: 0 2px;
+    font-size: 1.5em;
     font-weight: bold;
     transition: color .5s;
 }
 
 .links>a:hover{
-    color: darkblue;
+    color: rgb(0, 0, 99);
+}
+
+.tech{
+    border-radius: 25px;
+    border: 2px solid white;
+    /* margin: 0 2px; */
+    padding: 2px 2px;
+    font-weight: 600;
+}
+
+.features{
+    font-size: 1.5em;
+    /* color: white; */
 }
