@@ -1,13 +1,15 @@
 import React from 'react';
 import './SideBar.css';
 
-const SideBar = () => {
+const SideBar = (props) => {
+
+    const { scrollToHash } = props;
     return (
         <div className="sideBar">
-            <p>Home</p>
-            <p>Skills</p>
-            <p>Projects</p>
-            <p>Contact</p>
+            <p onClick={()=>{scrollToHash("home")}}>Home</p>
+            <p onClick={()=>{scrollToHash("about")}}>About</p>
+            <p onClick={()=>{scrollToHash("projects")}}>Projects</p>
+            <p onClick={()=>{scrollToHash("blogs")}}>Blogs</p>
         </div> 
     );
 };

@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
+import skills from './skills.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id="about">
                 <h1 className="section-heading">About Me</h1>
             <div className="container  pb-5">
                 <div className="row row-cols-1 row-cols-md-2 g-3 d-flex align-items-center">
@@ -25,7 +26,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="skills">
-                        <img className="img-fluid" width="450px" src="https://trnwrckd.github.io/ph-simplePortfolio/images/skillSet.png" alt="" />
+                        <img className="img-fluid" width="450px" src={skills} alt="" />
                     </div>
                 </div>
             </div>

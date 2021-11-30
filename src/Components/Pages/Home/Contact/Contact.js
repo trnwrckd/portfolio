@@ -10,12 +10,9 @@ const Contact = () => {
     const { register, handleSubmit, formState: { errors ,reset } } = useForm();
     const form = useRef();
 
-    console.log(apiKey.serviceID)
-
     const onSubmit = (data) => {
-        emailJS.sendForm('service_1g9q71j', 'template_ynd0nbo', form.current, 'user_wOget9jbIkVTkHWivXVUv')
+        emailJS.sendForm(apiKey.serviceID, apiKey.templateID, form.current, apiKey.userID)
             .then(res => {
-                console.log(res.text);
                 reset();
             })
             .catch(error => console.log(error.text));

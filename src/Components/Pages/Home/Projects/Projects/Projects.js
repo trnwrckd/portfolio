@@ -14,7 +14,7 @@ const Projects = () => {
     },[])
 
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <h1 className="section-heading">Projects</h1>
             <div data-aos="fade-left" className=" container projects-container">
                 <div className= "row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">

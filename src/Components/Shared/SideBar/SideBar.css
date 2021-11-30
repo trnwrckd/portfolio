@@ -6,12 +6,18 @@
     left: -100%;
     left: 0;
     height: 110vh;
-    color: black;
+    color: white;
     font-size: 3.5rem;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: black;
     transition: all .5s;
+}
+
+.sideBar>p:hover{
+    color: #ff922d;
+    cursor: pointer;
 }

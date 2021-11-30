@@ -12,6 +12,7 @@ const Project = (props) => {
         const redirectURL = `/${id}`;
         navigate(redirectURL);
     }
+    
 
     return (
         <div className="col">

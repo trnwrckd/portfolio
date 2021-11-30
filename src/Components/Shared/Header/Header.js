@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { BaseModal, ModalCloseTarget } from 'react-spring-modal';
 import SideBar from '../SideBar/SideBar';
+import { useNavigate } from 'react-router';
 
 const Header = () => {
 
     const [displaySideBar, setdisplaySideBar] = useState(false);
+    const navigate = useNavigate();
 
     const toggleSideNav = () => {
         setdisplaySideBar(!displaySideBar);
@@ -18,6 +20,17 @@ const Header = () => {
         top: '0px',
         width: '80%'
     };
+
+    const scrollToHash = (hash) => {
+        setdisplaySideBar(false);
+        if ( hash === 'blogs') {
+            const redirectURL = `/${hash}`;
+            navigate(redirectURL);
+        } else {
+            const hashLoc = document.getElementById(hash);
+            hashLoc.scrollIntoView();
+        }
+    }
 
     return (
         <div className="header">
@@ -33,7 +46,7 @@ const Header = () => {
                 }}
                 contentProps={{ style: staticModalStyles }}
             >
-                <SideBar />
+                <SideBar scrollToHash={scrollToHash} />
                 <ModalCloseTarget>
                     <div className="w-100 d-flex justify-content-end">
                         <button className="btn-close-modal d-block">╳</button>
