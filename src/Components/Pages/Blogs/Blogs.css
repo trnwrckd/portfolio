@@ -1,0 +1,11 @@
+.blogs{
+    background-color: crimson;
+    height: 100vh;
+}
+
+.sorry{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

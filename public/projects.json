@@ -4,20 +4,67 @@
         "title" : "Surreal Studio",
         "shortDesc" : "An Art Selling website.",
         "img": "./images/surrealstudio.png",
-        "url": "https://surreal-studio.firebaseapp.com/"
+        "links": {
+            "url" : "https://surreal-studio.firebaseapp.com/",
+            "front": "https://github.com/trnwrckd/surreal-studio-client-side",
+            "back": "https://github.com/trnwrckd/surreal-studio-server-side"
+        },
+        "techs": [
+            "ReactJS" , "NodeJS" , "MongoDB" , "ExpressJS", "Firebase Auth" , "Bootstrap 5", "Heroku", "React Toastify", "Axios"
+        ],
+        "features":[
+            "Users can explore our art gallery and place purchase orders",
+            "Users can check order status, Delete orders",
+            "Users can add reviews",
+            "Admins can delete orders and update order status",
+            "Admins can add new artworks to database and delete existing items",
+            "Admins have the authority to make another admin",
+            "CRUD operations on MongoDB",
+            "Responsive and clean UI",
+            "Firebase Authenticatoion"
+        ]
     },
     {
         "id": 2, 
         "title" : "Nomad Travels",
         "shortDesc" : "A Travel Booking website.",
         "img": "./images/nomadtravels.png",
-        "url": "https://nomad-travels-504b4.firebaseapp.com/"
+        "links": {
+            "url": "https://nomad-travels-504b4.firebaseapp.com/",
+            "front": "https://github.com/trnwrckd/nomad-travels-client-side",
+            "back": "https://github.com/trnwrckd/nomad-travels-server"
+        },
+        "techs": [
+            "MongoDB" , "ExpressJS", "ReactJS" , "NodeJS" ,"Firebase", "Bootstrap 5", "Heroku", "React Hook Form", "React Slick"
+        ],
+        "features": [
+            "Users can explore and book tours, check order status and delete orders",
+            "Admins can add new tour package to database, update order status and delete orders",
+            "Mobile, tablet and desktop Responsive",
+            "Google and Email authentication using Firebase",
+            "Frontend hosted on Firebase",
+            "Server hosted on Heroku",
+            "REST API using MongoDB and ExpressJS"
+        ]
     },
     {
         "id": 3, 
         "title" : "Covid Support",
         "shortDesc" : "An website for support during the pandemic.",
         "img": "./images/covidsupport.png",
-        "url": "https://react-firebase-authentic-c6866.web.app/"
+        "links": {
+            "url": "https://react-firebase-authentic-c6866.web.app/",
+            "front": "https://github.com/trnwrckd/ph-healthcare-related-website"
+        },
+        "techs": [
+            "ReactJS", "Firebase" , "Bootstrap 5", "React Leaflet"
+        ],
+        "features": [
+            "Custom Hooks",
+            "Protected routes using react-router",
+            "Firebase authentication (Google, Email)",
+            "Custom API",
+            "Responsive and interactive UI"
+        ]
     }
 ]

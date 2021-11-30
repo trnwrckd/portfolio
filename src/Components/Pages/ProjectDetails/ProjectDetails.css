@@ -1,0 +1,35 @@
+.project-details{
+    background-color: #B59B26;
+    min-height: 100vh;
+}
+
+.cursor-pointer:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.details-container{
+    height: 70vh;
+}
+
+.project-details-img{
+    border-radius: 10px;
+}
+
+.links{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+.links>a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color .5s;
+}
+
+.links>a:hover{
+    color: darkblue;
+}

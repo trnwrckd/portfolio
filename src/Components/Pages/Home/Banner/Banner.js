@@ -1,4 +1,4 @@
-import React , {useEffect, useState} from 'react';
+import React , {useEffect} from 'react';
 import './Banner.css';
 
 import Aos from 'aos';
@@ -6,7 +6,7 @@ import Aos from 'aos';
 
 const Banner = () => {
 
-    useState(() => {
+    useEffect(() => {
        Aos.init({duration:2000});
     },[])
 
@@ -15,7 +15,7 @@ const Banner = () => {
             <div>
                 <div className="px-5">
                     <p className="name"> Ishmamur Rahman</p>
-                    <p className="role">Junior Frontend Developer </p>
+                    <p className="role">Junior <span style={{color:'#B8C23C'}}>Frontend</span> Developer </p>
                 </div>
                 <div>
                     <button className="btn-resume">

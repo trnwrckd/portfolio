@@ -2,10 +2,16 @@ import React from 'react';
 import './Project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from 'react-router';
 
 const Project = (props) => {
     
-    const { title, shortDesc, img , url} = props.project;
+    const { id, title, shortDesc, img , url} = props.project;
+    const navigate = useNavigate();
+    const redirectToDetails = (id) => {
+        const url = `/${id}`;
+        navigate(url);
+    }
 
     return (
         <div className="col">
@@ -14,7 +20,7 @@ const Project = (props) => {
                     <a href={url} target="blank"> <FontAwesomeIcon icon={faLink}/></a>
                 </div>
                 <div className="details">
-                    <button className="btn-details">Details</button>
+                    <button className="btn-details" onClick={()=>{redirectToDetails(id)}}>Details</button>
                 </div>
                 <img className="project-img" src={img} alt="" />
             </div>

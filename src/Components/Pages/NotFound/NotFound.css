@@ -1,0 +1,34 @@
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    height: 100vh;
+    color: white;
+}
+
+.btn-not-found{
+    border: none;
+    border-radius: 5px;
+    padding: 0px 25px;
+    transition: .5s all;
+}
+.btn-not-found:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s all;
+    background-color: black;
+}
+.btn-not-found:hover{
+    color: white;
+    font-weight: 800;
+}
+.btn-not-found:hover:before{
+    opacity: 1;
+}
