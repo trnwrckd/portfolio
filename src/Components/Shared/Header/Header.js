@@ -2,24 +2,21 @@ import React, { useState } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { useTransition, animated } from 'react-spring';
 import { BaseModal, ModalCloseTarget } from 'react-spring-modal';
+import SideBar from '../SideBar/SideBar';
 
 const Header = () => {
 
     const [displaySideBar, setdisplaySideBar] = useState(false);
 
-    const transition = useTransition(displaySideBar,{
-    });
-
     const toggleSideNav = () => {
-        // setdisplaySideBar(!displaySideBar);
+        setdisplaySideBar(!displaySideBar);
     }
 
     const staticModalStyles = {
-        position: 'absolute',
-        top: '0px'
-        // width: '100%',
+        position: 'fixed',
+        top: '0px',
+        width: '80%'
     };
 
     return (
@@ -36,12 +33,12 @@ const Header = () => {
                 }}
                 contentProps={{ style: staticModalStyles }}
             >
-                <div className="sideBar">
-                    <p>Home</p>
-                    <p>Skills</p>
-                    <p>Projects</p>
-                    <p>Contact</p>
-                </div> 
+                <SideBar />
+                <ModalCloseTarget>
+                    <div className="w-100 d-flex justify-content-end">
+                        <button className="btn-close-modal d-block">╳</button>
+                    </div>
+                </ModalCloseTarget>
             </BaseModal>          
         </div>
     );

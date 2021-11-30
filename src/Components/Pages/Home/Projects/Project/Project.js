@@ -6,18 +6,18 @@ import { useNavigate } from 'react-router';
 
 const Project = (props) => {
     
-    const { id, title, shortDesc, img , url} = props.project;
+    const { id, title, shortDesc, img , links} = props.project;
     const navigate = useNavigate();
     const redirectToDetails = (id) => {
-        const url = `/${id}`;
-        navigate(url);
+        const redirectURL = `/${id}`;
+        navigate(redirectURL);
     }
 
     return (
         <div className="col">
             <div className="project-img-container">
                 <div className="icons">
-                    <a href={url} target="blank"> <FontAwesomeIcon icon={faLink}/></a>
+                    <a href={links.url} target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLink}/></a>
                 </div>
                 <div className="details">
                     <button className="btn-details" onClick={()=>{redirectToDetails(id)}}>Details</button>

@@ -7,7 +7,7 @@ html{
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: #20204F;
   font-family: 'Dosis', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,4 +16,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+      transform: none !important;
 }

@@ -15,7 +15,7 @@ const Banner = () => {
             <div>
                 <div className="px-5">
                     <p className="name"> Ishmamur Rahman</p>
-                    <p className="role">Junior <span style={{color:'#B8C23C'}}>Frontend</span> Developer </p>
+                    <p className="role">Junior <span style={{color:'#ff922d'}}>Frontend</span> Developer </p>
                 </div>
                 <div>
                     <button className="btn-resume">

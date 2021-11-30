@@ -16,7 +16,7 @@ const ContactBtn = () => {
     }, [showModal]);
 
     const staticModalStyles = {
-        position: 'absolute',
+        position: 'fixed',
         top: '20px',
         width: '100%',
     };
@@ -36,9 +36,9 @@ const ContactBtn = () => {
                 isOpen={showModal}
                 onDismiss={() => setShowModal(false)}
                 contentTransition={{
-                    from: {  transform: 'translateY(-100%)' },
-                    enter: {  transform: 'translateY(0)' },
-                    leave: {  transform: 'translateY(-100%)' }
+                    from: {  top: '-100%' },
+                    enter: {  top: '0px' },
+                    leave: {  top: '-100%' }
                 }}
                 contentProps={{ style: staticModalStyles }}
             >
