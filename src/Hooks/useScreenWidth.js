@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 const useScreenWidth= ()=>  {
     const [width, setWidth] = useState(0);

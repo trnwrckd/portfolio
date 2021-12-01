@@ -1,8 +1,6 @@
 .contact{
-    /* height: 50vh; */
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.95);
-    background-color:rgba(0, 0, 0, 1);
+    background-color:black;
     display: flex;
     flex-direction: column;
     z-index: 888;
@@ -16,7 +14,7 @@
     background-color: black;
     margin-top: -30px;
 }
-input , .btn-mail{
+input , .btn-mail, textarea{
     display: block;
     padding: 8px 20px;
     width: 50%;

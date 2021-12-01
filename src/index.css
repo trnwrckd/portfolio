@@ -17,6 +17,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 [data-aos^=fade][data-aos^=fade].aos-animate {
+      transform: none !important;
+}
+[data-aos^=slide][data-aos^=slide].aos-animate  {
       transform: none !important;
 }

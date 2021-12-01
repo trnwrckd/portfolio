@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import skills from './skills.png';
+
+import Aos from 'aos';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
+
+    useEffect(() => {
+        Aos.init();
+    },[])
+
     return (
         <div className="about" id="about">
                 <h1 className="section-heading">About Me</h1>
@@ -33,7 +40,7 @@ const About = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="skills">
+                    <div className="skills" data-aos="fade-in">
                         <img className="img-fluid" width="450px" src={skills} alt="" />
                     </div>
                 </div>

@@ -1,17 +1,11 @@
-import React , {useEffect} from 'react';
+import React from 'react';
 import './Banner.css';
 
-import Aos from 'aos';
 
 
 const Banner = () => {
-
-    useEffect(() => {
-       Aos.init({duration:2000});
-    },[])
-
     return (
-        <div className="banner full-vh">
+        <div className="banner">
             <div>
                 <div className="px-5">
                     <p className="name"> Ishmamur Rahman</p>

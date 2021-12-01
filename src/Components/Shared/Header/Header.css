@@ -9,14 +9,15 @@
     right: 0;
     text-align: end;
     color: white;
-    position: fixed;
+    /* position: fixed; */
 }
 
 #hamburger{
     font-weight: 600;
     font-size: 3rem;
+    transition: .5s all;
 }
 #hamburger:hover{
-    color: rgb(255, 174, 0);
+    color: #ff922d;
     cursor: pointer;
 }

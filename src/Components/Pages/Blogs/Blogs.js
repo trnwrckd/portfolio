@@ -15,13 +15,13 @@ const Blogs = () => {
     }  ,[])
 
     return (
-        <div data-aos="fade-in" className="blogs px-5">
-            <div className="d-flex align-items-center">
-                <h1 onClick={()=>{navigate('/')}} className="cursor-pointer"><FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon></h1>    
-                <h1 className="section-heading ps-4"> Blogs</h1>
+        <div data-aos="fade-in" data-aos-duration="1000" className="blogs px-5">
+            <div className="d-flex align-items-center section-heading">
+                <p onClick={()=>{navigate('/')}} className="cursor-pointer-white"><FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon></p>    
+                <p className="ps-4"> Blogs</p>
             </div>
-            <div className="sorry px-1 text-light">
-                <p style={{fontSize: '4rem'}}>Working on it..</p>            
+            <div className="sorry px-1 section-heading">
+                <p>Working on it..</p>            
             </div>
         </div >
     );

@@ -4,13 +4,9 @@
 
 .App {
   text-align: center;
-  overflow: hidden; 
+  overflow: hidden;
+  position: relative; 
 }
-
-.full-vh{
-  height: 110vh;
-}
-
 .section-heading{
     color: #ffffff;
     width: 100%;
@@ -28,8 +24,9 @@
     color: #ff922d;
 }
 
-.project-title{
-    font-size: 2.5rem;
-    font-weight: 600;
 
+@media only screen and (max-width: 500px){
+    .section-heading{
+      font-size: 2.5em;
+  }  
 }

@@ -5,7 +5,7 @@
 .bio{
     font-size: 1.4em;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     text-align: start;
 }
 
@@ -16,7 +16,7 @@
 
 .social:hover{
     transform: translateY(-2px);
-    color: #B8C23C;
+    color: #C29D63;
 }
 
 .text-orange{
@@ -24,7 +24,7 @@
 }
 
 .text-green{
-    color: #73ff73;
+    color: #B8C23C;
 }
 
 .dazzle{

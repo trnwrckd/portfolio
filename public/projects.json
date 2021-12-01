@@ -27,7 +27,7 @@
             "Admins have the authority to make another admin",
             "CRUD operations on MongoDB",
             "Responsive and clean UI",
-            "Firebase Authenticatoion"
+            "Firebase authentication"
         ]
     },
     {
@@ -62,7 +62,7 @@
     {
         "id": 3, 
         "title" : "Covid Support",
-        "shortDesc" : "An website for support during the pandemic.",
+        "shortDesc" : "A website for support during the pandemic.",
         "images": [
           "./images/covid-support-1.png",
           "./images/covid-support-2.png",
@@ -83,5 +83,80 @@
             "Custom API",
             "Responsive and interactive UI"
         ]
+    },
+    {
+        "id": 4, 
+        "title" : "To-do List App",
+        "shortDesc" : "A website to keep track of your tasks.",
+        "images": [
+          "./images/todolist-1.png",
+          "./images/todolist-2.png",
+          "./images/todolist-3.png",
+          "./images/todolist-4.png"
+        ],
+        "links": {
+            "url": "https://coffee-cuop.web.app/",
+            "front": "https://github.com/trnwrckd/toDoList"
+        },
+        "techs": [
+            "Svelte", "Firebase" , "Bootstrap ", "Firestore", "SvelteFire"
+        ],
+        "features": [
+            "Firebase for user authentication",
+            "Firestore as database",
+            "Users can create tasks",
+            "Users can mark tasks as completed or delete them",
+            "Users can see total statistics"
+        ]
+    },
+    {
+        "id": 5, 
+        "title" : "Weather API",
+        "shortDesc" : "A website searching weather by city name.",
+        "images": [
+          "./images/weather-1.png",
+          "./images/weather-2.png",
+          "./images/weather-3.png",
+          "./images/weather-4.png"
+        ],
+        "links": {
+            "url": "https://ph-weather-api.netlify.app/",
+            "front": "https://github.com/trnwrckd/ph-practiceAPI"
+        },
+        "techs": [
+            "HTML5", "CSS3" , "Bootstrap", "Javscript ES6"
+        ],
+        "features": [
+            "Used two APIs for Weather and Timezone",
+            "Interesting visual effects",
+            "Responsive UI"
+        ]
+    },
+    {
+        "id": 6, 
+        "title" : "Clickadu Clone",
+        "shortDesc" : "Cloned parts of of Clickadu - an advertising agency's website.",
+        "images": [
+          "./images/clickadu-1.png",
+          "./images/clickadu-2.png",
+          "./images/clickadu-3.png",
+          "./images/clickadu-4.png",
+          "./images/clickadu-5.png"
+        ],
+        "links": {
+            "url": "https://heuristic-noether-4b06e1.netlify.app/",
+            "front": "https://github.com/trnwrckd/clickadu-clone"
+        },
+        "techs": [
+            "HTML5", "CSS" , "Bootstrap 5", "Javascript ES6" , "JQuery" , "Slick"
+        ],
+        "features": [
+            "Multi page website",
+            "Custom components using Javascript",
+            "Entirely different components designed for Mobile devices",
+            "Enhanced UX",
+            "Desktop, Tablet and Mobile responsive"
+        ]
     }
+    
 ]

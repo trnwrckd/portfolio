@@ -1,4 +1,4 @@
-import React ,{ useEffect, useState} from 'react';
+import React ,{ useEffect} from 'react';
 import { useLocation, useNavigate } from 'react-router';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
@@ -28,8 +28,8 @@ const SlideShow = (props) => {
     },[])
 
     return (
-        <div data-aos="slide-left" className="px-5 py-4">
-            <div className="d-flex align-items-center project-title text-light">
+        <div data-aos="slide-left" data-aos-duration="900" className="px-5 pt-2">
+            <div className="d-flex align-items-center section-heading text-light">
                     <p onClick={() => { navigate(-1) }} className="cursor-pointer-white">
                         <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
                     </p>

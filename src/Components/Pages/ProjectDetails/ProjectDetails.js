@@ -27,10 +27,10 @@ const ProjectDetails = () => {
     if( loaded && typeof(thisProject) === 'undefined') return <NotFound/>
 
     return (
-        <div data-aos="fade-in" className="px-5 pt-3 project-details">
+        <div data-aos="fade-in" className="px-3 pt-3 project-details">
             <div className="d-flex flex-column">
-                <div className="d-flex align-items-center project-title">
-                    <p onClick={() => { navigate('/') }} className="cursor-pointer">
+                <div className="d-flex align-items-center section-heading">
+                    <p onClick={() => { navigate('/') }} className="cursor-pointer-white">
                         <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
                     </p>
                     <p className="ps-4 text-start"> {title} </p>

@@ -16,8 +16,10 @@ const ContactBtn = () => {
     }, [showModal]);
 
     const staticModalStyles = {
-        position: 'fixed',
-        top: '20px',
+        position: 'absolute',
+        top: '-40px',
+        left:0,
+        padding: '0',
         width: '100%',
     };
 
@@ -43,7 +45,7 @@ const ContactBtn = () => {
                 contentProps={{ style: staticModalStyles }}
             >
         
-                <Contact></Contact>
+                <Contact setShowModal={setShowModal}></Contact>
                 <ModalCloseTarget>
                     <div className="w-100 d-flex justify-content-end">
                         <button className="btn-close-modal d-block">╳</button>

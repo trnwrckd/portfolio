@@ -1,28 +1,31 @@
-import React, { useState } from 'react';
-import './Header.css';
+import React, {useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { BaseModal, ModalCloseTarget } from 'react-spring-modal';
+import { BaseModal } from 'react-spring-modal';
 import SideBar from '../SideBar/SideBar';
 import { useNavigate } from 'react-router';
+import "@reach/dialog/styles.css";
+
+
+import './Header.css';
 
 const Header = () => {
-
-    const [displaySideBar, setdisplaySideBar] = useState(false);
+    const [displaySideBar, setDisplaySideBar] = useState(false);
     const navigate = useNavigate();
-
-    const toggleSideNav = () => {
-        setdisplaySideBar(!displaySideBar);
-    }
-
-    const staticModalStyles = {
-        position: 'fixed',
-        top: '0px',
-        width: '80%'
+    
+    const toggleSideBar = (e) => {
+        setDisplaySideBar(!displaySideBar);
+    }    
+           
+   const staticModalStyles = {
+        position: 'absolute',
+        top: '-100px',
+        width: '75%',
+        height: '100%',    
     };
 
     const scrollToHash = (hash) => {
-        setdisplaySideBar(false);
+        setDisplaySideBar(false);
         if ( hash === 'blogs') {
             const redirectURL = `/${hash}`;
             navigate(redirectURL);
@@ -34,25 +37,27 @@ const Header = () => {
 
     return (
         <div className="header">
-            <h1 onClick={toggleSideNav} id="hamburger"><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></h1>
+            <h1 onClick={toggleSideBar} id="hamburger">
+                <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+            </h1>
 
-            <BaseModal
-                isOpen={displaySideBar}
-                onDismiss={() => setdisplaySideBar(false)}
-                contentTransition={{
-                    from: {  left: '-100%' },
-                    enter: {  left: '0' },
-                    leave: {  left: '-100%' }
-                }}
-                contentProps={{ style: staticModalStyles }}
-            >
-                <SideBar scrollToHash={scrollToHash} />
-                <ModalCloseTarget>
-                    <div className="w-100 d-flex justify-content-end">
-                        <button className="btn-close-modal d-block">╳</button>
+            <div >
+                <BaseModal
+                    isOpen={displaySideBar}
+                    
+                    onDismiss={() => setDisplaySideBar(false)}
+                    contentTransition={{
+                        from: {  left: '-100%' },
+                        enter: {  left: '0' },
+                        leave: {  left: '-100%' }
+                    }}
+                    contentProps={{ style: staticModalStyles }}
+                >
+                    <div className="sidebar-container" >
+                        <SideBar scrollToHash={scrollToHash} setDisplaySideBar={setDisplaySideBar} />
                     </div>
-                </ModalCloseTarget>
-            </BaseModal>          
+                </BaseModal>
+            </div>
         </div>
     );
 };
