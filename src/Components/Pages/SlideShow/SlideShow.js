@@ -48,7 +48,7 @@ const SlideShow = (props) => {
                     : 
                         images.map(image =>
                             <div key={image} className="mb-3">
-                                <img src={image} className="img-fluid" alt="" />
+                                <img src={image} className="img-fluid rounded" alt="" />
                             </div>
                             )
                 }
