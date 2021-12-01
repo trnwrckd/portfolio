@@ -6,14 +6,14 @@ import ProjectDetails from './Components/Pages/ProjectDetails/ProjectDetails';
 import Blogs from './Components/Pages/Blogs/Blogs';
 import SlideShow from './Components/Pages/SlideShow/SlideShow';
 
-import { ScrollToTop } from 'react-router-scroll-to-top';
+// import { ScrollToTop } from 'react-router-scroll-to-top';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop>
+        {/* <ScrollToTop> */}
             <Routes>
             <Route path = '/' element={<Home/>}/>
             <Route path = 'home' element={<Home/>}/>
@@ -22,7 +22,7 @@ function App() {
             <Route path='*' element={<NotFound />} />
             <Route path = ':id' element={<ProjectDetails/>}></Route>
           </Routes>
-        </ScrollToTop>
+        {/* </ScrollToTop> */}
       </BrowserRouter>
     </div>
   );
