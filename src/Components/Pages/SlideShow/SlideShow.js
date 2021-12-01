@@ -28,14 +28,14 @@ const SlideShow = (props) => {
     },[])
 
     return (
-        <div data-aos="slide-left" data-aos-duration="900" className="px-5 pt-2">
+        <div data-aos="slide-left" data-aos-duration="900" className="pt-2">
             <div className="d-flex align-items-center section-heading text-light">
                     <p onClick={() => { navigate(-1) }} className="cursor-pointer-white">
                         <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
                     </p>
                     <p className="mb-3 ms-3 text-start">SlideShow</p>
                 </div>
-            <div>
+            <div className="px-5">
                 {
                     width > 700 ?
                         <Fade {...slideProperties}>
