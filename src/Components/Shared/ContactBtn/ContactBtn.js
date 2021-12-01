@@ -17,7 +17,7 @@ const ContactBtn = () => {
 
     const staticModalStyles = {
         position: 'absolute',
-        top: '-40px',
+        top: '-7vh',
         left:0,
         padding: '0',
         width: '100%',

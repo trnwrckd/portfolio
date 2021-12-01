@@ -15,7 +15,7 @@ const Blogs = () => {
     }  ,[])
 
     return (
-        <div data-aos="fade-in" data-aos-duration="1000" className="blogs px-5">
+        <div data-aos="fade-in" data-aos-duration="1000" className="blogs">
             <div className="d-flex align-items-center section-heading">
                 <p onClick={()=>{navigate('/')}} className="cursor-pointer-white"><FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon></p>    
                 <p className="ps-4"> Blogs</p>

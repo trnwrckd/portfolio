@@ -5,7 +5,8 @@ import NotFound from './Components/Pages/NotFound/NotFound';
 import ProjectDetails from './Components/Pages/ProjectDetails/ProjectDetails';
 import Blogs from './Components/Pages/Blogs/Blogs';
 import SlideShow from './Components/Pages/SlideShow/SlideShow';
-import ScrollToTop from './Components/Shared/ScrollToTop/ScrollToTop';
+
+import { ScrollToTop } from 'react-router-scroll-to-top';
 
 function App() {
 
