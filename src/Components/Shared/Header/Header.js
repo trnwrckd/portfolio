@@ -21,7 +21,7 @@ const Header = () => {
         position: 'absolute',
         top: '-100px',
         width: '75%',
-        height: '100%',    
+        // height: '100%',    
     };
 
     const scrollToHash = (hash) => {

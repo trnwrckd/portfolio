@@ -43,17 +43,18 @@
     justify-content: center;
 }
 .links>a{
-    color: white;
+    color: #ffdc68;
     text-decoration: none;
     margin: 0 5px;
     padding: 0 2px;
     font-size: 1.8em;
     font-weight: bold;
     transition: color .5s;
+
 }
 
 .links>a:hover{
-    color: rgb(107, 147, 255);
+    color: rgb(255, 255, 255);
 }
 
 .tech{

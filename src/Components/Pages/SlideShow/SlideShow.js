@@ -33,9 +33,9 @@ const SlideShow = (props) => {
                     <p onClick={() => { navigate(-1) }} className="cursor-pointer-white">
                         <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
                     </p>
-                    <p className="mb-3 ms-3 text-start">SlideShow</p>
+                    <p className="mb-3 ms-3 text-start">Page Shots</p>
                 </div>
-            <div className="px-5">
+            <div className="px-5 pb-5">
                 {
                     width > 700 ?
                         <Fade {...slideProperties}>

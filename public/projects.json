@@ -135,7 +135,7 @@
     {
         "id": 6, 
         "title" : "Clickadu Clone",
-        "shortDesc" : "Cloned parts of of Clickadu - an advertising agency's website.",
+        "shortDesc" : "Cloned parts of Clickadu - an advertising agency's website.",
         "images": [
           "./images/clickadu-1.png",
           "./images/clickadu-2.png",

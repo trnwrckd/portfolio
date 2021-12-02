@@ -64,3 +64,9 @@ input , .btn-mail, textarea{
 .btn-mail:hover:after{
     right: 0;
 }
+
+@media screen and (max-width:600px) {
+    input , .btn-mail, textarea{
+        width: 75%;
+    }
+}
