@@ -51,6 +51,7 @@ const ProjectDetails = () => {
           {links.url && <a href={links.url}> Live Site</a>}
           {links.front && <a href={links.front}> Frontend</a>}
           {links.back && <a href={links.back}> Backend</a>}
+          {links.repo && <a href={links.repo}> Github Repo</a>}
         </div>
       </div>
 
@@ -58,14 +59,16 @@ const ProjectDetails = () => {
         <div className="col py-3">
           <div className="d-flex flex-column">
             <div className="details-img-container">
-              <div
-                className="slideshow"
-                onClick={() => {
-                  startSlideShow(thisProject);
-                }}
-              >
-                <FontAwesomeIcon icon={faCameraRetro} />
-              </div>
+              {images.length > 1 && (
+                <div
+                  className="slideshow"
+                  onClick={() => {
+                    startSlideShow(thisProject);
+                  }}
+                >
+                  <FontAwesomeIcon icon={faCameraRetro} />
+                </div>
+              )}
               <img
                 src={images[0]}
                 className="img-fluid project-details-img"

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Surreal Studio",
-    "shortDesc": "An Art Selling website.",
+    "shortDesc": "An Art Selling website using the MERN stack",
     "images": [
       "./images/surreal-studio-1.png",
       "./images/surreal-studio-2.png",
@@ -41,7 +41,7 @@
   {
     "id": 2,
     "title": "Nomad Travels",
-    "shortDesc": "A Travel Booking website.",
+    "shortDesc": "A MERN stack Travel Booking website.",
     "images": [
       "./images/nomad-travels-1.png",
       "./images/nomad-travels-2.png",
@@ -78,7 +78,7 @@
   {
     "id": 3,
     "title": "Covid Support",
-    "shortDesc": "A website for support during the pandemic.",
+    "shortDesc": "A React SPA for support during the pandemic.",
     "images": [
       "./images/covid-support-1.png",
       "./images/covid-support-2.png",
@@ -100,8 +100,8 @@
   },
   {
     "id": 4,
-    "title": "To-do List App",
-    "shortDesc": "A website to keep track of your tasks.",
+    "title": "To-do List Web app",
+    "shortDesc": "A website to keep track of your tasks, using Svelte",
     "images": [
       "./images/todolist-1.png",
       "./images/todolist-2.png",
@@ -124,7 +124,7 @@
   {
     "id": 5,
     "title": "Weather App",
-    "shortDesc": "A website searching weather by city name.",
+    "shortDesc": "A website searching weather by city name, basic API integration",
     "images": [
       "./images/weather-1.png",
       "./images/weather-2.png",
@@ -145,7 +145,7 @@
   {
     "id": 6,
     "title": "Clickadu Clone",
-    "shortDesc": "Cloned parts of Clickadu - an advertising agency's website.",
+    "shortDesc": "Cloned parts of Clickadu - an advertising agency's website. Using Jquery",
     "images": [
       "./images/clickadu-1.png",
       "./images/clickadu-2.png",
@@ -171,6 +171,47 @@
       "Entirely different components designed for Mobile devices",
       "Enhanced UX",
       "Desktop, Tablet and Mobile responsive"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Unwind",
+    "shortDesc": "Co-developed a self-help android app using Flutter",
+    "images": ["./images/no-img.png"],
+    "links": {
+      "repo": "https://github.com/trnwrckd/Unwind"
+    },
+    "techs": ["Flutter", "Dart", "Firebase", "Firestore", "Material Design"],
+    "features": [
+      "Authentication using Firebase",
+      "Firestore used as database",
+      "Users can keep journals",
+      "Users can rate their current mood and later see a statistical representation",
+      "Users can book doctors' appointment",
+      "Details about different psychological disorders",
+      "Helps you to calm down and unwind"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "EduPassion",
+    "shortDesc": "A Coursera like React SPA, only the UI",
+    "images": [
+      "./images/edupassion-1.png",
+      "./images/edupassion-2.png",
+      "./images/edupassion-3.png",
+      "./images/edupassion-4.png",
+      "./images/edupassion-5.png"
+    ],
+    "links": {
+      "url": "https://flamboyant-shirley-5f5033.netlify.app/",
+      "front": "https://github.com/trnwrckd/ph-review-website"
+    },
+    "techs": ["React", "Bootstrap 5", "HTML5", "CSS3", "Firebase Auth"],
+    "features": [
+      "Enroll in different courses concentrating on a variety of subjects",
+      "See course details and ratings",
+      "Check what people are saying about us in the review section"
     ]
   }
 ]
