@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./ProjectDetails.css";
 import { useParams, useNavigate } from "react-router-dom";
-import { useProjects } from "../../../Hooks/useProjects";
+import { useData } from "../../../Hooks/useData";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,13 +16,15 @@ import NotFound from "../NotFound/NotFound";
 const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [projects, loaded] = useProjects();
+  const [projects, loaded] = useData();
 
+  console.log("projects", projects);
   const thisProject = projects[id - 1];
   const { title, images, links, techs, features } = thisProject
     ? thisProject
     : {};
 
+  console.log(thisProject);
   useEffect(() => {
     AOS.init();
   }, []);

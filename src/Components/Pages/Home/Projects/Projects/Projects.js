@@ -3,13 +3,13 @@ import Project from "../Project/Project";
 import "././Projects.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useProjects } from "../../../../../Hooks/useProjects";
+import { useData } from "../../../../../Hooks/useData";
 
 const Projects = () => {
-  const [projects] = useProjects();
+  const [projects] = useData();
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (

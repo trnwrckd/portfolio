@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "position": "Trainee",
+    "organization": "Geeky Solutions Learnathon",
+    "duration": "April, 2022 to Present",
+    "description": "Learning industry standards and tools & technologies like Angular, .Net 6,  MongoDB, Redis, Atlassian Bitbucket, RabbitMQ etc."
+  },
+  {
+    "id": 2,
+    "position": "Volunteer Translator",
+    "organization": "Harvard's CS50 videos",
+    "duration": "May, 2022 to Present",
+    "description": "Translated Several CS50 technical videos to Bangla, in order to make those videos more accessible to Bangladeshi learners."
+  },
+  {
+    "id": 3,
+    "organization": "Dazzle",
+    "position": "Social Media Designer & IT Executive",
+    "duration": "June, 2021 to May,2022",
+    "description": "Made photos & short videos as part of their marketing campaign. Used tools like Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro."
+  }
+]

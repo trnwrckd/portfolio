@@ -37,17 +37,29 @@ const SideBar = (props) => {
       </p>
       {/* <p onClick={()=>{scrollToHash("blogs")}}>Blogs</p> */}
       <div className="d-flex justify-content-center">
-        <a href="https://github.com/trnwrckd" target="_blank">
+        <a
+          href="https://github.com/trnwrckd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <h1 className="sidebar-nav-item me-3">
             <FontAwesomeIcon icon={faGithub} />
           </h1>
         </a>
-        <a href="https://www.linkedin.com/in/ishmamur-rahman/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/ishmamur-rahman/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <h1 className="sidebar-nav-item me-3">
             <FontAwesomeIcon icon={faLinkedin} />
           </h1>
         </a>
-        <a href="https://codepen.io/trnwrckd" target="_blank">
+        <a
+          href="https://codepen.io/trnwrckd"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <h1 className="sidebar-nav-item ">
             <FontAwesomeIcon icon={faCodepen} />
           </h1>

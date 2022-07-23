@@ -5,6 +5,7 @@ import Footer from "../../../Shared/Footer/Footer";
 import Header from "../../../Shared/Header/Header";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects/Projects";
 import "./Home.css";
 
@@ -19,6 +20,7 @@ const Home = () => {
       <Banner />
       <About />
       <Projects />
+      <Experience />
       <ContactBtn></ContactBtn>
       <Footer />
     </div>

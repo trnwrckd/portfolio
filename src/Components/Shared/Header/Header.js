@@ -20,6 +20,7 @@ const Header = () => {
     position: "absolute",
     top: "-125px",
     width: "75%",
+    zIndex: 4,
     // height: '100%',
   };
 
