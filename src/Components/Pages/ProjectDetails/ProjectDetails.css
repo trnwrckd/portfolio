@@ -19,7 +19,8 @@
     bottom: 0;
     right: 0;
     background-color: black;
-    padding: 0 10px;
+    padding: 0 15px;
+    box-shadow: -2px 0px 5px rgb(17, 17, 17);
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     color: white;
@@ -61,8 +62,12 @@
     border-radius: 25px;
     border: 2px solid white;
     /* margin: 0 2px; */
-    padding: 2px 2px;
+    padding: 5px 15px;
     font-weight: 600;
+    transition: .4s all;
+}
+.tech:hover{
+    border: 2px solid #f5dd75;
 }
 
 .features{

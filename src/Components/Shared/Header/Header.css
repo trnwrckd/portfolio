@@ -21,3 +21,7 @@
     color: #ff922d;
     cursor: pointer;
 }
+
+.sidebar-container{
+    height: 100vh;
+}

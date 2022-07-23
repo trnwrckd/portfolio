@@ -1,5 +1,7 @@
 .about{
     background-color: #303075;
+    background-color: #571c35;
+    height: 100vh;
 }
 
 .bio{
@@ -15,8 +17,8 @@
 }
 
 .social:hover{
-    transform: translateY(-2px);
-    color: #C29D63;
+    transform: translateY(-3px);
+    color: #f0d376;
 }
 
 .text-orange{
