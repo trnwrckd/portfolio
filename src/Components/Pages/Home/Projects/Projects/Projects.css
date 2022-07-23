@@ -1,5 +1,5 @@
 .projects{
-    background-color: #20204F;
+    background-color: var(--projects-bg);
     /* min-height: 100vh;     */
 }
 .projects-container{
@@ -10,5 +10,4 @@
     align-items: center;
     justify-content: center;
     color: white;
-    
 }

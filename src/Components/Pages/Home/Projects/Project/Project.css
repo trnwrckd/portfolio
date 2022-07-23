@@ -47,12 +47,11 @@
 }
 
 .icons>a{
-    color: white;
+    color: #11113d;
     transition: .5s all;
 }
 .icons>a:hover{
-    color: #dd8118;
-    color: #11113d;
+    color: white;
 }
 
 .details{

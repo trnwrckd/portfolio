@@ -13,7 +13,7 @@ import {
 
 const About = () => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({ duration: 1000 });
   }, []);
 
   return (

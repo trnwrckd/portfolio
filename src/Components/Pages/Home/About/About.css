@@ -1,8 +1,6 @@
 .about{
-    background-color: #303075;
-    background-color: #571c35;
-    background-color: #3C244F;
-    height: 100vh;
+    background-color: var(--about-bg);
+    min-height: 100vh;
 }
 
 .bio{

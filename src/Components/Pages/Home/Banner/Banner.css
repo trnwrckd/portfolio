@@ -1,8 +1,20 @@
 .banner{
-    background-color: #20204F;
+    background-color: var(--banner-bg);
     color: white;
     font-weight: 700;
     height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+.banner:before{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 100%;
+    background-color: var(--about-bg);
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .banner>div{
     width: 100%;
@@ -35,7 +47,7 @@
 }
 .btn-resume:hover{
     color: black;
-    border: 3px solid rgb(165, 97, 19);
+    /* border: 3px solid rgb(194, 107, 8); */
 }
 .btn-resume:before{
     position: absolute;

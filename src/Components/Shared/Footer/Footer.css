@@ -2,7 +2,13 @@
     background: black;
     color: white;
 }
-.footer>h4{
-    padding: 0;
+.footer>h5{
+    padding: 5px 20px;
     margin: 0;
+}
+
+@media only screen and (max-width: 492px){
+    .footer{
+        text-align: left;
+    }
 }

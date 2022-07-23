@@ -1,3 +1,8 @@
+:root{
+  --banner-bg: #20204F;
+  --about-bg: #372566;
+  --projects-bg: #1a1a42;
+}
 [data-fs = "large"]{
   font-size:45px
 }
