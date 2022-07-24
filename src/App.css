@@ -1,6 +1,8 @@
 :root{
   --banner-bg: #20204F;
-  --about-bg: #1C374F;
+  --about-bg: #1B364F;
+  --banner-bg: #372566;
+  --about-bg: #20204F;
   --projects-bg: #1a1a42;
 }
 [data-fs = "large"]{

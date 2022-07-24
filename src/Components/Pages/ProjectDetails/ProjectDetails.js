@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./ProjectDetails.css";
 import { useParams, useNavigate } from "react-router-dom";
-import { useData } from "../../../Hooks/useData";
+import { useProjects } from "../../../Hooks/useProjects";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,7 +17,7 @@ import Loader from "../../Shared/Loader/Loader";
 const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [projects, loaded, ,] = useData();
+  const [projects, loaded] = useProjects();
 
   console.log("projects", projects);
   const thisProject = projects[id - 1];
