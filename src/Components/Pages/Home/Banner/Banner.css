@@ -64,3 +64,9 @@
 .btn-resume:hover:before{
     top: 0;
 }
+
+@media only screen and (max-width : 492px){
+    .banner:before {
+        background-color: transparent;
+    }
+}

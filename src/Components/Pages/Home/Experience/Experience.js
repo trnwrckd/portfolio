@@ -1,10 +1,11 @@
 import React from "react";
 import { useData } from "../../../../Hooks/useData";
+import Loader from "../../../Shared/Loader/Loader";
 import "./Experience.css";
 
 export default function Experience() {
-  const data = useData();
-  const experiences = data[1];
+  const [, , experiences, loaded] = useData();
+  if (!loaded) return <Loader />;
   return (
     <div className="experiences" id="experiences">
       <h1 className="section-heading">Experience</h1>

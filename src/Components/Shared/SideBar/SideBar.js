@@ -35,6 +35,14 @@ const SideBar = (props) => {
       >
         Projects
       </p>
+      <p
+        className="sidebar-nav-item"
+        onClick={() => {
+          scrollToHash("experiences");
+        }}
+      >
+        Experiences
+      </p>
       {/* <p onClick={()=>{scrollToHash("blogs")}}>Blogs</p> */}
       <div className="d-flex justify-content-center">
         <a

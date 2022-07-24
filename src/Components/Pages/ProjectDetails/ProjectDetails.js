@@ -12,11 +12,12 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import NotFound from "../NotFound/NotFound";
+import Loader from "../../Shared/Loader/Loader";
 
 const ProjectDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [projects, loaded] = useData();
+  const [projects, loaded, ,] = useData();
 
   console.log("projects", projects);
   const thisProject = projects[id - 1];
@@ -32,9 +33,8 @@ const ProjectDetails = () => {
   const startSlideShow = (project) => {
     navigate("/slideshow", { state: project });
   };
-
-  if (loaded && typeof thisProject === "undefined") return <NotFound />;
-
+  if (!loaded) return <Loader />;
+  else if (loaded && typeof thisProject === "undefined") return <NotFound />;
   return (
     <div data-aos="fade-in" className="px-3 pt-3 project-details">
       <div className="d-flex flex-column">
