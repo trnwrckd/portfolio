@@ -17,7 +17,7 @@ export default function Experience() {
               {exp.organization}
             </h2>
             <h5>{exp.duration}</h5>
-            <h4>{exp.description}</h4>
+            <h4> - {exp.description}</h4>
           </div>
         ))}
       </div>
