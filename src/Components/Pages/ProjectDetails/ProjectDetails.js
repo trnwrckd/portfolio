@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./ProjectDetails.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { useProjects } from "../../../Hooks/useProjects";
@@ -9,7 +9,6 @@ import {
   faDotCircle,
   faCameraRetro,
 } from "@fortawesome/free-solid-svg-icons";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import NotFound from "../NotFound/NotFound";
 import Loader from "../../Shared/Loader/Loader";

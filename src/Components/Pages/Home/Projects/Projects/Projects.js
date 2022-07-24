@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useProjects } from "../../../../../Hooks/useProjects";
 import Project from "../Project/Project";
 import Loader from "../../../../Shared/Loader/Loader";
-import Aos from "aos";
 import "aos/dist/aos.css";
 import "././Projects.css";
 
 const Projects = () => {
   const [projects, loaded] = useProjects();
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   if (!loaded) return <Loader />;
   return (
     <div className="projects" id="projects">

@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./NotFound.css";
-import Aos from "aos";
 import { useNavigate } from "react-router";
 
 const NotFound = () => {
