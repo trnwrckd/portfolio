@@ -19,16 +19,10 @@ const ProjectDetails = () => {
   const navigate = useNavigate();
   const [projects, loaded] = useProjects();
 
-  console.log("projects", projects);
   const thisProject = projects[id - 1];
   const { title, images, links, techs, features } = thisProject
     ? thisProject
     : {};
-
-  console.log(thisProject);
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const startSlideShow = (project) => {
     navigate("/slideshow", { state: project });
@@ -101,7 +95,7 @@ const ProjectDetails = () => {
                 <small>
                   <FontAwesomeIcon icon={faDotCircle}></FontAwesomeIcon>
                 </small>
-                <p className="d-inline-block ps-2">{feature}</p>
+                <p className="d-inline-block ps-2 feature-desc">{feature}</p>
               </div>
             ))}
           </div>

@@ -23,35 +23,28 @@ const About = () => {
         <div className="row row-cols-1 row-cols-md-2 g-3 d-flex align-items-center">
           <div className="bio px-3">
             <p>
-              From websites to simple illustrations, I love
+              I love
               <span className="text-orange">
                 {" "}
-                designing things from scratch.{" "}
+                designing web applications from scratch.{" "}
               </span>
-              I spend a significant amount of time
-              <span className="text-green"> visualizing </span>
-              what I'm about to create before jumping in to a project.
             </p>
             <p>
-              Development is sort of an{" "}
-              <span className="text-orange"> art form </span> to me. I need
-              everything to work perfectly and look beautiful. I believe that a{" "}
-              <span className="text-green"> good UX </span> can never be traded
-              off for anything else.{" "}
+              Frontend development is sort of an{" "}
+              <span className="text-yellow"> art form </span> to me. I like
+              implementing the{" "}
+              <span className="text-orange">user centric features.</span> I
+              believe that a <span className="text-yellow"> good UX </span> can
+              never be traded off for anything else.{" "}
             </p>
-            <p>I care about the things i do in order to do them well. </p>
             <p>
-              Currently working as a Social Media Designer at
-              <a
-                href="https://www.facebook.com/dazzle.ctg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="dazzle"
-              >
-                Dazzle
-              </a>
-              , but I'm open for Frontend Web Developer roles.
+              Being a CS graduate from University of Chittagong, these days I'm
+              working on improving my problem solving skills on platforms like{" "}
+              <span className="text-orange">HackerRank</span> and{" "}
+              <span className="text-yellow">LeetCode</span>, and I've got some
+              exciting side projects going &#129395;
             </p>
+            <p>I care about the things I do in order to do them well. </p>
             <div className="d-flex justify-content-center">
               <a
                 href="https://github.com/trnwrckd"

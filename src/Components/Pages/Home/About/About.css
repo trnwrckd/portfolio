@@ -21,19 +21,15 @@
 }
 
 .text-orange{
-    color: #ff922d;
+    color: #ff9f44;
 }
 
-.text-green{
-    color: #B8C23C;
+.text-yellow{
+    color: #fff16f;
 }
 
-.dazzle{
-    color: rgb(255, 241, 111);
-    margin-left: 5px;
-    transition: .5s all;
-}
-
-.dazzle:hover{
-    color: black;
+@media only screen and (max-width : 492px){
+    .bio{
+        font-size : 1.2em;
+    }
 }
