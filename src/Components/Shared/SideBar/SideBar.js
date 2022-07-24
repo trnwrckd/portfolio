@@ -44,7 +44,7 @@ const SideBar = (props) => {
         Experiences
       </p>
       {/* <p onClick={()=>{scrollToHash("blogs")}}>Blogs</p> */}
-      <div className="d-flex justify-content-center">
+      <p className="mt-2 d-flex justify-content-center">
         <a
           href="https://github.com/trnwrckd"
           target="_blank"
@@ -72,7 +72,7 @@ const SideBar = (props) => {
             <FontAwesomeIcon icon={faCodepen} />
           </h1>
         </a>
-      </div>
+      </p>
     </div>
   );
 };

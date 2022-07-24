@@ -21,8 +21,8 @@
     cursor: pointer;
 }
 
-@media only screen and(max-width : 692px){
+@media only screen and (max-width : 692px){
     .sideBar {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
