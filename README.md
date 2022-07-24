@@ -2,4 +2,4 @@
 
 ## Live Site - https://ishmamur-rahman-portfolio.netlify.app/
 
-### Me and my love for vanilla css. And of course, overdoing it 🤦‍♂️
+### What I'm about, and some of the stuff I've done
