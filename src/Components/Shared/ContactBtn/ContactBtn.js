@@ -16,15 +16,16 @@ const ContactBtn = () => {
       ? setBtn({ display: "none" })
       : setTimeout(() => {
           setBtn({ display: "block" });
-        }, 1500);
+        }, 700);
   }, [showModal]);
 
   const staticModalStyles = {
     position: "absolute",
-    top: "-7vh",
+    top: 0,
     left: 0,
     padding: "0",
     width: "100%",
+    height: "60vh",
   };
 
   return (
