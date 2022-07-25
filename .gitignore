@@ -1,6 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 *~.apiKey.js
 
+#cursor
+src/cursor.png
 # dependencies
 /node_modules
 /.pnp

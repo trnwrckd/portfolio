@@ -20,9 +20,13 @@
     color: #ff922d;
     cursor: pointer;
 }
+[data-reach-dialog-content]{
+    margin: 0 !important; 
+}
 
 @media only screen and (max-width : 692px){
     .sideBar {
         font-size: 2rem;
+        height: 100%;
     }
 }

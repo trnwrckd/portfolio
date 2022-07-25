@@ -18,21 +18,24 @@ const Header = () => {
 
   const staticModalStyles = {
     position: "absolute",
-    top: "-125px",
+    top: "0",
     width: "75%",
+    height: "100%",
+    background: "yellow",
     zIndex: 4,
-    // height: '100%',
   };
 
   const scrollToHash = (hash) => {
     setDisplaySideBar(false);
-    if (hash === "blogs") {
-      const redirectURL = `/${hash}`;
-      navigate(redirectURL);
-    } else {
-      const hashLoc = document.getElementById(hash);
-      hashLoc.scrollIntoView();
-    }
+    setTimeout(() => {
+      if (hash === "blogs") {
+        const redirectURL = `/${hash}`;
+        navigate(redirectURL);
+      } else {
+        const hashLoc = document.getElementById(hash);
+        hashLoc.scrollIntoView();
+      }
+    }, 500);
   };
 
   return (
@@ -52,12 +55,10 @@ const Header = () => {
           }}
           contentProps={{ style: staticModalStyles }}
         >
-          <div className="sidebar-container">
-            <SideBar
-              scrollToHash={scrollToHash}
-              setDisplaySideBar={setDisplaySideBar}
-            />
-          </div>
+          <SideBar
+            scrollToHash={scrollToHash}
+            setDisplaySideBar={setDisplaySideBar}
+          />
         </BaseModal>
       </div>
     </div>

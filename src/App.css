@@ -1,9 +1,10 @@
 :root{
   --banner-bg: #20204F;
   --about-bg: #21405e;
-  /* --banner-bg: #372566;
-  --about-bg: #20204F; */
   --projects-bg: #1a1a42;
+}
+html{
+  scroll-behavior: smooth;
 }
 [data-fs = "large"]{
   font-size: 45px
