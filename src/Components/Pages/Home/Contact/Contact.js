@@ -39,7 +39,7 @@ const Contact = (props) => {
     <div className="contact">
       <h1 className="pt-3"> Contact</h1>
       <ToastContainer position="top-left" />
-      <form ref={form} onSubmit={handleSubmit(onSubmit)} className="pb-3">
+      <form ref={form} onSubmit={handleSubmit(onSubmit)}>
         <input
           type="text"
           name="name"
