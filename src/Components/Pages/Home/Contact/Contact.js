@@ -1,6 +1,5 @@
 import emailJS from "emailjs-com";
 import React, { useRef } from "react";
-import apiKey from "./apiKey";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
@@ -16,16 +15,14 @@ const Contact = (props) => {
   const form = useRef();
 
   const { setShowModal } = props;
-
   const notify = () => toast.success("Email Sent!", { theme: "dark" });
-
   const onSubmit = (data) => {
     emailJS
       .sendForm(
-        apiKey.serviceID,
-        apiKey.templateID,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        apiKey.userID
+        process.env.REACT_APP_USER_ID
       )
       .then((res) => {
         form.current.reset();
