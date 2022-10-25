@@ -1,20 +1,16 @@
-import React, { useEffect } from "react";
-import "./About.css";
-import skills from "./skills.png";
+import React, { useEffect } from "react"
+import "./About.css"
+import skills from "./skills.png"
 
-import Aos from "aos";
+import Aos from "aos"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faCodepen,
-} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedin, faCodepen } from "@fortawesome/free-brands-svg-icons"
 
 const About = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+    Aos.init({ duration: 1000 })
+  }, [])
 
   return (
     <div className="about" id="about">
@@ -24,51 +20,27 @@ const About = () => {
           <div className="bio px-3">
             <p>
               I love
-              <span className="text-orange">
-                {" "}
-                designing web applications from scratch.{" "}
-              </span>
+              <span className="text-orange"> designing web applications from scratch. </span>
             </p>
             <p>
-              Frontend development is sort of an{" "}
-              <span className="text-yellow"> art form </span> to me. I like
-              implementing the{" "}
-              <span className="text-orange">user centric features.</span> I
-              believe that a <span className="text-yellow"> good UX </span> can
-              never be traded off for anything else.{" "}
+              Frontend development is sort of an <span className="text-yellow"> art form </span> to me. I like implementing the <span className="text-orange">user centric features.</span> I believe that a <span className="text-yellow"> good UX </span> can never be traded off for anything else.{" "}
             </p>
             <p>
-              Being a CS graduate from University of Chittagong, these days I'm
-              working on improving my problem solving skills on platforms like{" "}
-              <span className="text-orange">HackerRank</span> and{" "}
-              <span className="text-yellow">LeetCode</span>, and I've got some
-              exciting side projects going &#129395;
+              Being a CS graduate from University of Chittagong, these days I'm working on improving my problem solving skills on platforms like <span className="text-orange">HackerRank</span> and <span className="text-yellow">LeetCode</span>, and I've got some exciting side projects going &#129395;
             </p>
             <p>I care about the things I do in order to do them well. </p>
             <div className="d-flex justify-content-center">
-              <a
-                href="https://github.com/trnwrckd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/trnwrckd" target="_blank" rel="noopener noreferrer">
                 <h1 className="social me-3">
                   <FontAwesomeIcon icon={faGithub} />
                 </h1>
               </a>
-              <a
-                href="https://www.linkedin.com/in/ishmamur-rahman/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://www.linkedin.com/in/ishmamur-rahman/" target="_blank" rel="noopener noreferrer">
                 <h1 className="social me-3">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </h1>
               </a>
-              <a
-                href="https://codepen.io/trnwrckd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://codepen.io/trnwrckd" target="_blank" rel="noopener noreferrer">
                 <h1 className="social">
                   <FontAwesomeIcon icon={faCodepen} />
                 </h1>
@@ -81,7 +53,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

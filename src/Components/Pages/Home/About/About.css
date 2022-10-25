@@ -1,35 +1,35 @@
-.about{
-    background-color: var(--about-bg);
-    min-height: 100vh;
+.about {
+  background-color: var(--about-bg);
+  min-height: 100vh;
 }
 
-.bio{
-    font-size: 1.4em;
-    color: white;
-    font-weight: 500;
-    text-align: start;
+.bio {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  text-align: start;
 }
 
-.social{
-    color: white;
-    transition: .5s all;
+.social {
+  color: white;
+  transition: 0.5s all;
 }
 
-.social:hover{
-    transform: translateY(-3px);
-    color: #f0d376;
+.social:hover {
+  transform: translateY(-3px);
+  color: #f0d376;
 }
 
-.text-orange{
-    color: #ff9f44;
+.text-orange {
+  color: #ff9f44;
 }
 
-.text-yellow{
-    color: #fff16f;
+.text-yellow {
+  color: #fff16f;
 }
 
-@media only screen and (max-width : 492px){
-    .bio{
-        font-size : 1.2em;
-    }
+@media only screen and (max-width: 492px) {
+  .bio {
+    font-size: 1.2em;
+  }
 }

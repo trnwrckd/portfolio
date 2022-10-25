@@ -13,7 +13,7 @@ const Contact = (props) => {
     formState: { errors },
   } = useForm();
   const form = useRef();
-
+  console.log(process.env.REACT_APP_PUBLIC_KEY);
   const { setShowModal } = props;
   const notify = () => toast.success("Email Sent!", { theme: "dark" });
   const onSubmit = (data) => {
@@ -22,7 +22,7 @@ const Contact = (props) => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then((res) => {
         form.current.reset();

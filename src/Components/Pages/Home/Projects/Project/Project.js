@@ -1,17 +1,17 @@
-import React from "react";
-import "./Project.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router";
+import React from "react"
+import "./Project.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { useNavigate } from "react-router"
 
 const Project = (props) => {
-  const { id, title, shortDesc, images, links } = props.project;
-  const navigate = useNavigate();
+  const { id, title, shortDesc, images, links } = props.project
+  const navigate = useNavigate()
 
   const redirectToDetails = (id) => {
-    const redirectURL = `/${id}`;
-    navigate(redirectURL);
-  };
+    const redirectURL = `/${id}`
+    navigate(redirectURL)
+  }
 
   return (
     <div className="col">
@@ -28,20 +28,19 @@ const Project = (props) => {
           <button
             className="btn-details"
             onClick={() => {
-              redirectToDetails(id);
-            }}
-          >
+              redirectToDetails(id)
+            }}>
             Details
           </button>
         </div>
         <img className="project-img" src={images[0]} alt="" />
       </div>
       <div className="text-start mx-2 mt-2">
-        <h3>{title}</h3>
-        <h5>{shortDesc}</h5>
+        <h4>{title}</h4>
+        <p>{shortDesc}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project
